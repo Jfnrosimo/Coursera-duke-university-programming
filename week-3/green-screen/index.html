@@ -5,6 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="./styles.css" />
         <script src="./main.js"></script>
+        <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
         <title>Green Screen</title>
     </head>
+    <body>
+        
+
+        <h1>Green Screen Web Page</h1>
+
+        <canvas id="first-canvas"></canvas> <canvas id="second-canvas"></canvas>
+
+        <p id="fg">Foreground: <input type="file" value="Choose file" multiple="false" accept="image/*" id="fgimage" onchange="uploadFg()" /></p>
+        <p id="bg">Background: <input type="file" value="Choose file" multiple="false" accept="image/*" id="bgimage" onchange="uploadBg()" /></p>
+
+        <div id="clearit"><input type="button" value="Create Composite" id="create" onclick="greenScreen()" /> <input type="button" value="Clear Canvases" id="clear" onclick="clearCanvas()" /></div>
+        
+    </body>
 </html>

@@ -20,3 +20,4 @@ function makeGray() {
     
     imgcanvas = document.getElementById("can2");
     image.drawTo(imgcanvas);
+}

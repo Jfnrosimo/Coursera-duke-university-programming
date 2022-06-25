@@ -1,0 +1,17 @@
+body {
+    margin: 30px;
+}
+
+h1 {
+    color: grey;
+}
+
+#can, #can2 {
+    width: 400pt;
+    border: 1px solid grey;
+    margin-right: 100px;
+}
+
+#upload, #makegray {
+    font-size: 17px;
+}

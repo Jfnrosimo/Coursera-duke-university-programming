@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <script src="./main.js"></script>
+        <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
+        <title>MiniProject Part 2</title>
+    </head>
+    <body>
+        <h1>Filter Fun</h1>
+
+        <h3>Try our awesome filter. Enjoy!</h3>
+
+        <canvas id="can"></canvas>
+
+        <div class="settings">
+            <h2 id="load">Load an Image</h2>
+            <input type="file" value="Choose Files" accept="image/*" multiple="false" id="fileimage" onchange="uploadImage()" />
+            <h2 id="choose">Choose Filter</h2>
+            <input type="button" value="Grayscale Effect"  id="grayscale" onclick="applyGrayscale()" />
+            <input type="button" value="Red Effect" id="red" onclick="applyRed()" />
+            <input type="button" value="Horizontal Rainbow Effect" id="hrainbow" onclick="applyHorizontalRainbow()" />
+            <input type="button" value="Vertical Rainbow Effect" id="vrainbow" onclick="applyVerticalRainbow()" />
+            <input type="button" value="Blur Effect" id="blur" onclick="applyBlur()" />
+            
+            <h2 id="reset">Reset Image</h2>
+            <input type="button" value="Reset Image" id="res" onclick="applyReset()" />
+        </div>
+    </body>
+</html>

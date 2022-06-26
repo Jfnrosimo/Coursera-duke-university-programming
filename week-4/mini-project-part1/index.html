@@ -11,6 +11,7 @@
 </head>
 <body>
     <h1>Filter Fun</h1>
+    <h3>Try our awesome filter. Enjoy!</h3>
 
     <canvas id="can"></canvas>
 
@@ -18,9 +19,14 @@
         <h2 id="load">Load an Image</h2>
         <input type="file" value="Choose Files" accept="image/*" multiple="false" id="fileimage" onchange="uploadImage()" />
         <h2 id="choose">Choose Filter</h2>
-        <input type="button" value="Grayscale"  id="grayscale" onclick="" />
-        <input type="button" value="Red" id="red" onclick="" />
-        <input type="button" value="Reset Image" onclick="" />
+        <input type="button" value="Grayscale Effect"  id="grayscale" onclick="applyGrayscale()" />
+        <input type="button" value="Red Effect" id="red" onclick="applyRed()" />
+        <input type="button" value="Horizontal Rainbow Effect" id="hrainbow" onclick="applyHorizontalRainbow()" />
+        <input type="button" value="Vertical Rainbow Effect" id="vrainbow" onclick="applyVerticalRainbow()" />
+        <input type="button" value="Blur Effect" id="blur" onclick="applyBlur()" />
+        
+        <h2 id="reset">Reset Image</h2>
+        <input type="button" value="Reset Image" id="res" onclick="applyReset()" />
     </div>
 </body>
 </html>

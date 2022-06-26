@@ -5,7 +5,7 @@ body {
 }
 
 canvas {
-    width: 400pt;
+    width: 900pt;
     border: 1px solid white;
     margin: 0 auto 0;
     display: block;
@@ -21,14 +21,16 @@ h1 {
     font-size: 8em;
 }
 
+h3 {
+    text-align: center;
+}
+
 h2 {
+    font-size: 40px;
     margin-top: 50px;
 }
 
-#load {
-    margin-left: -80px;
+#fileimage, #grayscale, #red, #hrainbow, #vrainbow, #blur, #res {
+    font-size: 20px;
 }
 
-#choose {
-    margin-left: -100px;
-}

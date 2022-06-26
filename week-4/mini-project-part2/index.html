@@ -11,6 +11,8 @@
     <body>
         <h1>Filter Fun</h1>
 
+        <hr class="h1-bottom">
+
         <h3>Try our awesome filter. Enjoy!</h3>
 
         <canvas id="can"></canvas>
@@ -18,15 +20,21 @@
         <div class="settings">
             <h2 id="load">Load an Image</h2>
             <input type="file" value="Choose Files" accept="image/*" multiple="false" id="fileimage" onchange="uploadImage()" />
+            <hr class="load-bottom">
             <h2 id="choose">Choose Filter</h2>
-            <input type="button" value="Grayscale Effect"  id="grayscale" onclick="applyGrayscale()" />
-            <input type="button" value="Red Effect" id="red" onclick="applyRed()" />
-            <input type="button" value="Horizontal Rainbow Effect" id="hrainbow" onclick="applyHorizontalRainbow()" />
-            <input type="button" value="Vertical Rainbow Effect" id="vrainbow" onclick="applyVerticalRainbow()" />
-            <input type="button" value="Blur Effect" id="blur" onclick="applyBlur()" />
+            <input type="button" value="Grayscale Effect"  class="grayscale button" onclick="applyGrayscale()" />
+            <input type="button" value="Red Effect" class="red button" onclick="applyRed()" />
+            <input type="button" value="Horizontal Rainbow Effect" class="hrainbow button" onclick="applyHorizontalRainbow()" />
+            <input type="button" value="Vertical Rainbow Effect" class="vrainbow button" onclick="applyVerticalRainbow()" />
+            <input type="button" value="Blur Effect" class="blur button" onclick="applyBlur()" />
+            <input type="button" value="Red Hue" class="redhue button" onclick="applyRedHue()" />
+            <input type="button" value="Dark Hue" class="darkhue button" onclick="applyDarkHue()" />
+            <input type="button" value="Grid Lines" class="gridlines button" onclick="applyGridLines()" />
+            <hr class="choose-bottom">
             
             <h2 id="reset">Reset Image</h2>
-            <input type="button" value="Reset Image" id="res" onclick="applyReset()" />
+            <input type="button" value="Reset Image" class="res" onclick="applyReset()" />
+            <hr class="reset-bottom">
         </div>
     </body>
 </html>

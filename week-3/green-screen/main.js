@@ -35,7 +35,8 @@ function doGreenScreen() {
         }
         
     }
-    return output;
+    canvas=document.getElementById("first-canvas");
+    return output.drawTo(canvas);
 }
 
 function greenScreen() {
@@ -45,11 +46,10 @@ function greenScreen() {
     }
     if (bgImage == null || ! bgImage.complete()){
         alert("background not loaded");
+        return;
     }
     clearCanvas();
-    var finalImage = doGreenScreen();
-    canvas = document.getElementById("first-canvas");
-    finalImage.drawTo(canvas) ;
+    doGreenScreen(); 
 }
 
 function clearCanvas() {

@@ -13,11 +13,15 @@
 
         <h1>Green Screen Web Page</h1>
 
+        <h3>Upload your images to try this simple green screen</h3>
+
         <canvas id="first-canvas"></canvas> <canvas id="second-canvas"></canvas>
 
+        
         <p id="fg">Foreground: <input type="file" value="Choose file" multiple="false" accept="image/*" id="fgimage" onchange="uploadFg()" /></p>
         <p id="bg">Background: <input type="file" value="Choose file" multiple="false" accept="image/*" id="bgimage" onchange="uploadBg()" /></p>
-
+        
+        
         <div id="clearit"><input type="button" value="Create Composite" id="create" onclick="greenScreen()" /> <input type="button" value="Clear Canvases" id="clear" onclick="clearCanvas()" /></div>
         
     </body>
